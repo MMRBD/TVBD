@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSizePin">30sp</dimen>
+    <dimen name="layoutPadding">5dp</dimen>
+    <dimen name="layoutMargin">5dp</dimen>
+
+    <dimen name="gridSpaceHorizontal">15dp</dimen>
+    <dimen name="gridSpaceVertical">15dp</dimen>
+
+</resources>

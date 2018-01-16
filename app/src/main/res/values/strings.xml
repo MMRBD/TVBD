@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TVBD</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="p_continue">CONTINUE</string>
+    <string name="firstName">Full Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email Ex: someone@something.com</string>
+    <string name="phone">Phone Number Ex: 8801XXXXXXXXX</string>
+    <string name="submit">SUBMIT</string>
+
+
+</resources>
