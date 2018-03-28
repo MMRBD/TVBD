@@ -13,11 +13,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.MediaController;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import com.yqritc.scalablevideoview.ScalableType;
+
 
 public class PlayerActivity extends AppCompatActivity {
 
@@ -27,6 +26,7 @@ public class PlayerActivity extends AppCompatActivity {
     int position = 0;
     String[] urls;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,17 +35,15 @@ public class PlayerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_player);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        vidView = findViewById(R.id.video);
+//        vidView = findViewById(R.id.video);
         // tvChanelInfo = findViewById(R.id.tv_chanel_info);
 
         Intent intent = getIntent();
         position = intent.getIntExtra("position", 0);
         urls = intent.getStringArrayExtra("chURLS");
         String[] infos = intent.getStringArrayExtra("chINFO");
-        Log.e("Position 10", String.valueOf(position));
 
         final String[] vidAddress = {urls[position]};
-        Log.e("Position 10", String.valueOf(position));
         //tvChanelInfo.setText(info);
 
         final Uri vidUri = Uri.parse(vidAddress[0]);
@@ -68,7 +66,6 @@ public class PlayerActivity extends AppCompatActivity {
         pDialog.setIndeterminate(false);
         pDialog.setCancelable(false);
         pDialog.show();
-        Log.e("Position 11", String.valueOf(position));
 
         try {
             // Start the MediaController

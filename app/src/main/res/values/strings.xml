@@ -1,12 +1,22 @@
 <resources>
-    <string name="app_name">TVBD</string>
-    <string name="pin_code">Pin Code</string>
+    <string name="app_name">3D TV</string>
+    <string name="pin_code">PIN CODE</string>
     <string name="p_continue">CONTINUE</string>
     <string name="firstName">Full Name</string>
     <string name="lastName">Last Name</string>
     <string name="email">Email Ex: someone@something.com</string>
     <string name="phone">Phone Number Ex: 8801XXXXXXXXX</string>
     <string name="submit">SUBMIT</string>
+
+
+    <string name="dialog_core_not_installed_title">VLC not installed</string>
+    <string name="dialog_core_not_installed_message">Please install \"VLC Player\" app from Google Play Store</string>
+    <string name="dialog_button_install">Install</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="btncall">CALL</string>
+    <string name="pho">Date Expired\nContact Here</string>
+    <string name="mobile_no">MOBILE</string>
+    <string name="igl"> <u>Develop By <b>IGL Web Ltd.</b></u></string>
 
 
 </resources>

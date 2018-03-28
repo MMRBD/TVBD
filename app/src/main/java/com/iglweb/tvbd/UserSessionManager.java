@@ -39,7 +39,7 @@ public class UserSessionManager {
         if (!this.isUserLoggedIn()) {
 
             // user is not logged in redirect him to Login Activity
-            Intent i = new Intent(mContext, ChanelActivity.class);
+            Intent i = new Intent(mContext, CHActivity.class);
 
             // Closing all the Activities from stack
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -57,7 +57,7 @@ public class UserSessionManager {
 
     public HashMap<String, String> getUserPhoneID() {
         HashMap<String, String> user = new HashMap<>();
-        user.put(PHONE_ID, pref.getString(PHONE_ID, ""));
+        user.put(PHONE_ID, pref.getString(PHONE_ID, "tv"));
         return user;
     }
 

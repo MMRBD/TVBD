@@ -1,35 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context="com.iglweb.tvbd.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_pin_code"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/pin_code"
-        android:textColor="#000000"
-        android:textSize="@dimen/textSizePin" />
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1.2"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/etx_pin_code"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="number"
-        android:maxLength="6" />
+        <TextView
+            android:id="@+id/tv_pin_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="15dp"
+            android:text="@string/pin_code"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSizePin"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_continue"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="@string/p_continue" />
+        <TextView
+            android:id="@+id/tv_pin_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="15dp"
+            android:text="@string/mobile_no"
+            android:textColor="#000000"
+            android:textSize="@dimen/textSizePin"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etx_pin_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/pin_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etx_pin_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/mobile_no"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:padding="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/layout_igl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/igl"
+                android:textColor="#065cf2"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#949DA8"
+            android:shadowDx="2"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="@string/p_continue"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>
