@@ -46,8 +46,8 @@ public class CHActivity extends AppCompatActivity {
     private ImageAdapter mAdapter;
 
 
-    private static String URL_CHANNEL_TYPE = "http://tv-bd.com/tvbdApp/getChannelType.php";
-    private static String URL_GET_CHANNEL_URL = "http://tv-bd.com/tvbdApp/getChannelURL.php";
+    private static String URL_CHANNEL_TYPE = "URL";
+    private static String URL_GET_CHANNEL_URL = "URL";
 
     String[] chURL;
     String[] chLogoURL;
