@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
     UserSessionManager manager;
 
 
-    private static String URL_CHECK_STATUS = "http://tv-bd.com/tvbdApp/getPhonePin.php";
-    private static String URL_NEW_CHECK_STATUS = "http://tv-bd.com/tvbdApp/newGetPhonePin.php";
+    private static String URL_CHECK_STATUS = "URL";
+    private static String URL_NEW_CHECK_STATUS = "URL";
 
 
     @SuppressLint("HardwareIds")
