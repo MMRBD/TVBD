@@ -33,7 +33,7 @@ public class ExpireActivity extends AppCompatActivity {
     TextView tvName, tvMobile, tvpin;
     Button btnCall;
 
-    static String URL_RESELLER_INFO = "http://tv-bd.com/tvbdApp/getReseller.php";
+    static String URL_RESELLER_INFO = "URL";
     String name, mobile, userPin;
 
     @Override
